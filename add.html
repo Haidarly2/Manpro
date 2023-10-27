@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="add.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>Document</title>
+</head>
+<body>
+  <header class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-2 shadow">
+    <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Testing </a>
+      <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <div class="navbar-nav">
+            <button type="button" class="btn btn-primary position-relative">
+              Notification <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">+99 <span class="visually-hidden">unread messages</span></span>
+            </button>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div class="navbar-nav">
+            <div class="nav-item text-nowrap">
+              <a class="nav-link px-3" href="#">Sign out</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+  </header>
+  <div class="container-fluid">
+      <div class="row">
+          <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+            <div class="position-sticky pt-3">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="/dashboard.html">
+                    <h6>
+                      <i class="ph-bold ph-house"></i>
+                      Dashboard
+                    </h6>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/devices.html">
+                    <h6>
+                      <i class="ph-bold ph-devices"></i>
+                      Devices
+                    </h6>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">
+                    <h6>
+                      <i class="ph-bold ph-plus"></i>
+                      Add
+                    </h6>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+      </div>
+  </div>
+
+  <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+    <form class="row g-3">
+        <div class="col-12">
+          <label for="inputID" class="form-label">Device ID</label>
+          <input type="email" class="form-control" id="inputEmail4">
+        </div>
+        <div class="col-12">
+          <label for="inputNama" class="form-label">Nama Device</label>
+          <input type="password" class="form-control" id="inputPassword4">
+        </div>
+        <div class="col-12" id="before">
+            <label for="pilihOpsi" class="form-label">Dengan Humidity</label>
+            <br>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" onclick="hideShow(0)">
+                <label class="form-check-label" for="inlineRadio1">Yes</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" onclick="hideShow(1)" checked>
+                <label class="form-check-label" for="inlineRadio2">No</label>
+              </div>
+        </div>
+        <div class="col-12" id="after">
+            <label for="pilihOpsi" class="form-label">Humidity Level</label>
+            <br>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" onclick="hideShow()">
+                <label class="form-check-label" for="inlineRadio1">30%</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" onclick="hideShow()">
+                <label class="form-check-label" for="inlineRadio2">40%</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" onclick="hideShow()">
+                <label class="form-check-label" for="inlineRadio2">50%</label>
+            </div>
+        </div>
+        <div class="col-12">
+          <label for="inputZip" class="form-label">Set Timer (Dengan Menit)</label>
+          <input type="text" class="form-control" id="inputZip">
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Tambah</button>
+        </div>
+      </form>
+  </main>
+
+  <script src="add.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
