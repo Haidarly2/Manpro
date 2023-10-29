@@ -68,20 +68,207 @@
 
   <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
     <div class="row">
-      <div class="col-md-3 col-sm-3">
-        <div class="list-group">
-          <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
-            Device 1
-          </a>
-          <a href="#" class="list-group-item list-group-item-action">Device 2</a>
-          <a href="#" class="list-group-item list-group-item-action">Device 3</a>
-          <a href="#" class="list-group-item list-group-item-action">Device 4</a>
+      <div class="col-md-2 col-sm-2">
+        <div class="list-group" id="list-tab" role="tablist">
+          <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">Device 1</a>
+          <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">Device 2</a>
+          <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">Device 3</a>
+          <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">Device 4</a>
         </div>
       </div>
-      <div class="col-9">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+      <div class="col-8">
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+            <div class="card">
+              <div class="card-body">
+                <h2 class="card-title">
+                  Device 1
+                </h2>
+                <h6 class="card-subtitle mb-2 text-muted">IDXXXXXXX</h6>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    <h1>
+                      <i class="ph ph-drop-half-bottom"></i>
+                    </h1>
+                    <h6>
+                      Humidity
+                    </h6>
+                    <h5>
+                      30%
+                    </h5>
+                  </li>
+                  <li class="list-group-item">
+                    <h1>
+                      <i class="ph ph-thermometer"></i>
+                    </h1>
+                    <h6>
+                      Temperature
+                    </h6>
+                    <h5>
+                      45°C
+                    </h5>
+                  </li>
+                  <li class="list-group-item">
+                    <h1>
+                      <i class="ph ph-timer"></i>
+                    </h1>
+                    <h6>
+                      Timer
+                    </h6>
+                    <h5>
+                      120 Menit
+                    </h5>
+                  </li>
+                </ul>
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" style="height: 25px; width: 50px; margin-left:880px" checked>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+            <div class="card">
+              <div class="card-body">
+                <h2 class="card-title">
+                  Device 2
+                </h2>
+                <h6 class="card-subtitle mb-2 text-muted">IDXXXXXXX</h6>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    <h1>
+                      <i class="ph ph-drop-half-bottom"></i>
+                    </h1>
+                    <h6>
+                      Humidity
+                    </h6>
+                    <h5>
+                      30%
+                    </h5>
+                  </li>
+                  <li class="list-group-item">
+                    <h1>
+                      <i class="ph ph-thermometer"></i>
+                    </h1>
+                    <h6>
+                      Temperature
+                    </h6>
+                    <h5>
+                      45°C
+                    </h5>
+                  </li>
+                  <li class="list-group-item">
+                    <h1>
+                      <i class="ph ph-timer"></i>
+                    </h1>
+                    <h6>
+                      Timer
+                    </h6>
+                    <h5>
+                      120 Menit
+                    </h5>
+                  </li>
+                </ul>
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" style="height: 25px; width: 50px; margin-left:880px">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+            <div class="card">
+              <div class="card-body">
+                <h2 class="card-title">
+                  Device 3
+                </h2>
+                <h6 class="card-subtitle mb-2 text-muted">IDXXXXXXX</h6>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    <h1>
+                      <i class="ph ph-drop-half-bottom"></i>
+                    </h1>
+                    <h6>
+                      Humidity
+                    </h6>
+                    <h5>
+                      30%
+                    </h5>
+                  </li>
+                  <li class="list-group-item">
+                    <h1>
+                      <i class="ph ph-thermometer"></i>
+                    </h1>
+                    <h6>
+                      Temperature
+                    </h6>
+                    <h5>
+                      45°C
+                    </h5>
+                  </li>
+                  <li class="list-group-item">
+                    <h1>
+                      <i class="ph ph-timer"></i>
+                    </h1>
+                    <h6>
+                      Timer
+                    </h6>
+                    <h5>
+                      120 Menit
+                    </h5>
+                  </li>
+                </ul>
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" style="height: 25px; width: 50px; margin-left:880px">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+            <div class="card">
+              <div class="card-body">
+                <h2 class="card-title">
+                  Device 4
+                </h2>
+                <h6 class="card-subtitle mb-2 text-muted">IDXXXXXXX</h6>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    <h1>
+                      <i class="ph ph-drop-half-bottom"></i>
+                    </h1>
+                    <h6>
+                      Humidity
+                    </h6>
+                    <h5>
+                      30%
+                    </h5>
+                  </li>
+                  <li class="list-group-item">
+                    <h1>
+                      <i class="ph ph-thermometer"></i>
+                    </h1>
+                    <h6>
+                      Temperature
+                    </h6>
+                    <h5>
+                      45°C
+                    </h5>
+                  </li>
+                  <li class="list-group-item">
+                    <h1>
+                      <i class="ph ph-timer"></i>
+                    </h1>
+                    <h6>
+                      Timer
+                    </h6>
+                    <h5>
+                      120 Menit
+                    </h5>
+                  </li>
+                </ul>
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" style="height: 25px; width: 50px; margin-left:880px">
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

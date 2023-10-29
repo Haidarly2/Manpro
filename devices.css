@@ -93,3 +93,7 @@ body {
   main {
     padding: 99px;
   }
+
+  main .col-8 {
+    margin-left: 120px;
+  }
